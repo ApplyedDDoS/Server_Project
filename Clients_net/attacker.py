@@ -2,7 +2,7 @@ import socket
 import threading
 
 target = '127.0.0.1'
-fake_ip = '182.21.20.32'
+ip = '182.21.20.32'
 port = 8000
 
 
