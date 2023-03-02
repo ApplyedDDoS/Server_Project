@@ -3,13 +3,13 @@ from django.shortcuts import render
 # Create your views here.
 from django.http import HttpResponse
 import datetime
+import time
 
 def index(request):
     print(request.method == "GET")
     # now = datetime.datetime.now()
     # html = "<html><body color=\"yellow\">It is now %s.</body></html>" % now
-    # return HttpResponse(html)
-
+    # return HttpResponse(html) 
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
     if x_forwarded_for:
         ip = x_forwarded_for.split(',')[0]
