@@ -5,10 +5,12 @@ from django.http import HttpResponse
 import datetime
 import time
 
+
 def index(request):
     print(request.method == "GET")
     # now = datetime.datetime.now()
     # html = "<html><body color=\"yellow\">It is now %s.</body></html>" % now
+<<<<<<< HEAD:httpApp/views.py
     # return HttpResponse(html) 
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
     if x_forwarded_for:
@@ -30,3 +32,7 @@ def index(request):
 
     print(log_data)
     return render(request,"index.html")
+=======
+    # return HttpResponse(html)
+    return render(request, "index2.html")
+>>>>>>> 64326c1293086fd44f077341bd1ec195715b2cbb:app/httpApp/views.py

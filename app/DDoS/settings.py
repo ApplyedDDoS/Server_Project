@@ -24,9 +24,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1k96fvrw8k71bv*4ru*-_ca!(dc&r)!py!ii3r=78f@t#-=fjz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
+<<<<<<< HEAD:DDoS/settings.py
 ALLOWED_HOSTS = ["10.0.0.2","127.0.0.1"]
+=======
+ALLOWED_HOSTS = ['*']
+>>>>>>> 64326c1293086fd44f077341bd1ec195715b2cbb:app/DDoS/settings.py
 
 
 # Application definition
